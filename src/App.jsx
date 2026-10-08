@@ -3,6 +3,7 @@ import SearchBar from "./components/SearchBar";
 import UserList from "./components/UserList";
 import "./App.css";
 
+
 const API_URL = "https://jsonplaceholder.typicode.com/users";
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
     <main className="app">
       <header className="app-header">
         <h1>User Directory</h1>
+
       </header>
 
       <SearchBar
@@ -68,14 +70,21 @@ function App() {
         </p>
       )}
 
-      {!loading && !error && filteredUsers.length === 0 && (
-        <p className="status">
-          No matching users found.
-        </p>
-      )}
+      {!loading && !error && (
+        <>
+          <p className="user-count">
+            {filteredUsers.length}{" "}
+            {filteredUsers.length === 1 ? "user" : "users"} found
+          </p>
 
-      {!loading && !error && filteredUsers.length > 0 && (
-        <UserList users={filteredUsers} />
+          {filteredUsers.length === 0 ? (
+            <p className="status">
+              No matching users found.
+            </p>
+          ) : (
+            <UserList users={filteredUsers} />
+          )}
+        </>
       )}
     </main>
   );
