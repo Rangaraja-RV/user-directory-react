@@ -1,16 +1,60 @@
-# React + Vite
+# User Directory
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based user directory that fetches user data from a REST API and allows users to search by name or email.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Fetches users from a REST API
+- Displays users in responsive cards
+- Search users by name or email
+- Case-insensitive search
+- Displays the number of matching users
+- Loading state while fetching data
+- Error handling for failed API requests
+- Empty search results state
+- Component-based React architecture
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript
+- Vite
+- CSS
+- REST API
+- Git/GitHub
 
-## Expanding the ESLint configuration
+## API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project uses JSONPlaceholder for demonstration purposes.
+
+API endpoint:
+
+https://jsonplaceholder.typicode.com/users
+
+## Project Structure
+
+```text
+src/
++-- components/
+¦   +-- SearchBar.jsx
+¦   +-- UserCard.jsx
+¦   +-- UserList.jsx
++-- App.jsx
++-- App.css
++-- index.css
++-- main.jsx
+What I Practiced
+This project was built to practice practical React development, including:
+- Components and JSX
+- Props
+- State with useState
+- Event handling
+- Parent-child communication
+- useEffect
+- Fetching API data
+- Loading and error states
+- Controlled inputs
+- Filtering derived data
+- Rendering lists with keys
+- Basic accessibility
+- Git and GitHub workflow
