@@ -1,0 +1,95 @@
+*{
+  box-sizing: content-box;
+}
+
+.app {
+  width: min(100% - 32px, 1000px);
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.app-header h1 {
+  margin-bottom: 8px;
+}
+
+.app-header p {
+  color: #64748b;
+}
+
+.search-bar {
+  max-width:600px;
+  margin: 0 auto 32px;
+  display: flex;
+  padding:10px;
+}
+
+.search-bar label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  min-width: 150px;
+}
+
+.search-bar input {
+  width: 80%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.search-bar input:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.user-card {
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.user-card h2 {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.user-card p {
+  margin: 6px 0;
+  color: #475569;
+}
+
+.status {
+  text-align: center;
+  padding: 24px;
+}
+
+.error {
+  color: #b91c1c;
+}
+.user-card h2 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: #0f172a;
+}
+
+.user-card p {
+  margin: 6px 0;
+  color: #475569;
+}
+
+.user-card strong {
+  color: #1e293b;
+}
